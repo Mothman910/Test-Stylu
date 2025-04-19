@@ -1,5 +1,9 @@
 # Prompt: [nazwa_promptu]
 
+## ID prompta
+
+<!-- takie samo jak nazwa folderu prompta -->
+
 ## Cel
 
 <!-- Krótki opis celu promptu -->

@@ -26,3 +26,7 @@ Osoby dorosłe posiadające Smartfona.
 
 - React Native
 - Biblioteki .js do animacji
+
+## Wykluczone technologie (opcjonalnie)
+
+- TypeScript

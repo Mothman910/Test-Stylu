@@ -1,0 +1,150 @@
+# Prompt: Wykonanie Początkowych Kroków Architektury "Test Stylu"
+
+## ID prompta
+
+architecture-execute
+
+## Cel
+
+Wygenerowanie kodu inicjalizującego projekt React Native "Test Stylu" zgodnie z zdefiniowaną architekturą oraz implementacja podstawowej struktury folderów, nawigacji i szkieletów komponentów, umożliwiających szybkie rozpoczęcie prac rozwojowych, z uwzględnieniem dostępności i dobrej integracji z systemem Windows 11.
+
+## Kontekst
+
+> (źródło: architecture.md)
+>
+> ## Struktura Folderów i Plików (Proponowana)
+>
+> ```
+> /Test Stylu
+> ├── android/              # Natywny kod Android
+> ├── ios/                  # Natywny kod iOS
+> ├── src/
+> │   ├── assets/           # Zasoby statyczne
+> │   │   ├── images/       # Obrazy używane w quizie i UI
+> │   │   └── fonts/        # Czcionki (jeśli niestandardowe)
+> │   ├── components/       # Reużywalne komponenty UI
+> │   ├── screens/          # Komponenty reprezentujące ekrany aplikacji
+> │   │   ├── QuizScreen.js
+> │   │   └── ResultScreen.js
+> │   ├── navigation/       # Konfiguracja i logika nawigacji
+> │   │   └── AppNavigator.js
+> │   ├── services/         # Logika biznesowa, dostęp do danych
+> │   │   ├── QuizEngine.js
+> │   │   └── DataService.js
+> │   ├── store/            # Zarządzanie stanem (opcjonalnie, np. Zustand/Redux)
+> │   ├── styles/           # Style globalne, motywy
+> │   └── data/             # Dane quizu (np. questions.json)
+> ├── .gitignore            # Pliki ignorowane przez Git
+> ├── package.json          # Zależności i skrypty projektu
+> ├── README.md             # Opis projektu
+> ├── architecture.md       # Ten plik
+> └── docs/                 # Dokumentacja (istniejący folder)
+>     └── ...
+> ```
+>
+> ## Plan Kolejnych Kroków Rozwoju
+>
+> 1.  Inicjalizacja projektu React Native: Użycie `npx react-native init .`.
+> 2.  Utworzenie struktury folderów: Stworzenie katalogów wewnątrz `src/` zgodnie z proponowaną strukturą.
+> 3.  Implementacja Nawigacji: Skonfigurowanie podstawowej nawigacji między ekranami przy użyciu React Navigation.
+> 4.  Stworzenie Ekranów: Zaimplementowanie szkieletów `QuizScreen` i `ResultScreen`.
+> 5.  Podgląd: Umożliwienie podglądu działania aplikacji w przeglądarce na komputerze za pomocą przeglądarki Opera lub emulatora BlueStack w Windows 11.
+
+## Instrukcje
+
+1. **Inicjalizacja projektu:**
+
+   - Użyj komendy: `npx react-native init .` zgodnie z architecture.md.
+   - Wyjaśnij, co dokładnie ta komenda tworzy i jakie są następne kroki po jej wykonaniu.
+   - Uwzględnij specyfikę środowiska Windows 11 (m.in. uprawnienia, problemy z długością ścieżek).
+
+2. **Utworzenie struktury folderów:**
+
+   - Wygeneruj polecenia `mkdir` (dla PowerShell) do utworzenia wszystkich podfolderów w `src/` zgodnie z cytowaną strukturą.
+   - Dodaj polecenie tworzące plik `.gitkeep` w każdym pustym folderze, aby zapewnić, że Git śledzi strukturę folderów.
+   - Podaj w komentarzu, do czego służy każdy z tworzonych folderów.
+   - Dostosuj polecenia do PowerShell używanego w Windows 11.
+   - Utwórz plik `index.js` w każdym z głównych folderów, który będzie eksportował zawartość tych folderów.
+
+3. **Implementacja podstawowej nawigacji:**
+
+   - Podaj pełne polecenie `npm install` z listą wszystkich wymaganych zależności React Navigation.
+   - Utwórz plik `src/navigation/AppNavigator.js` z podstawowym Stack Navigator (ekrany: `Quiz`, `Result`).
+   - Zmodyfikuj `App.js`, aby renderował `AppNavigator`.
+   - Zapewnij poprawne importy i obsługę gestów nawigacyjnych.
+   - Uwzględnij problemy z zależnościami występujące w Windows 11.
+   - Dodaj dostępność (accessibility) do nawigacji (np. odpowiednie etykiety dla czytników ekranu).
+
+4. **Szkielety ekranów:**
+
+   - Utwórz pliki `src/screens/QuizScreen.js` i `src/screens/ResultScreen.js` z prostymi komponentami funkcyjnymi.
+   - Każdy ekran powinien zawierać podstawowe stylowanie (wyśrodkowany tekst, odpowiednie marginesy).
+   - Dodaj przycisk nawigacji między ekranami (z Quiz do Result i z Result z powrotem do Quiz).
+   - Zapewnij obsługę bezpiecznych obszarów (safe areas) dla wszystkich typów urządzeń.
+   - Zaimplementuj podstawowe funkcje dostępności: odpowiednie role, etykiety i wskazówki dla czytników ekranu.
+   - Dodaj obsługę różnych rozmiarów ekranu i orientacji urządzenia.
+
+5. **Szkielety serwisów:**
+
+   - Utwórz pliki `src/services/QuizEngine.js` i `src/services/DataService.js`.
+   - Dodaj komentarze JSDoc opisujące przeznaczenie tych serwisów i planowane funkcje.
+   - Zaimplementuj podstawową strukturę z eksportowanymi pustymi obiektami i funkcjami-stubami.
+   - Dodaj funkcje obsługi błędów i logowanie dla celów debugowania.
+
+6. **Podgląd aplikacji:**
+
+   - Dodaj szczegółowe instrukcje konfiguracji przeglądarki Opera dla testowania aplikacji React Native:
+     - Instalacja i konfiguracja wtyczek deweloperskich
+     - Ustawienia DevTools dla React Native
+     - Włączenie trybu mobilnego w przeglądarce
+   - Podaj pełną instrukcję konfiguracji emulatora BlueStack w Windows 11:
+     - Wymagania systemowe (w tym ustawienia BIOS i Hyper-V)
+     - Kroki instalacji i konfiguracji
+     - Połączenie z aplikacją React Native
+     - Debugowanie na emulatorze
+   - Dodaj instrukcje uruchamiania aplikacji w trybie deweloperskim.
+
+7. **Dostępność aplikacji:**
+   - Zaimplementuj podstawowe elementy dostępności w aplikacji:
+     - Odpowiednie atrybuty `accessibilityLabel` i `accessibilityHint` dla wszystkich elementów interaktywnych
+     - Właściwa kolejność nawigacji dla czytników ekranu (`accessibilityTraversalAfter`)
+     - Odpowiedni kontrast kolorów zgodny z WCAG 2.1
+     - Obsługa gestów dostępności
+
+## Potencjalne problemy i rozwiązania
+
+- **Problem:** Błędy podczas inicjalizacji projektu React Native w istniejącym katalogu.
+  **Rozwiązanie:** Użyj flagi `--template react-native-template-typescript` dla projektu TypeScript lub po prostu `--template react-native-template` dla JavaScript. Upewnij się, że katalog nie zawiera już plików npm/yarn.
+
+- **Problem:** Błędy podczas instalacji zależności React Navigation.
+  **Rozwiązanie:** Upewnij się, że instalujesz wszystkie wymagane zależności. W przypadku błędów, spróbuj użyć `npm install --save --legacy-peer-deps`.
+
+- **Problem:** Błędy związane z brakiem obsługi gestów nawigacyjnych.
+  **Rozwiązanie:** Upewnij się, że zainstalowano i poprawnie skonfigurowano `react-native-gesture-handler` oraz że w pliku `index.js` dodano import `import 'react-native-gesture-handler';` jako pierwszy import.
+
+- **Problem:** Aplikacja nie renderuje się poprawnie na urządzeniach z notchem.
+  **Rozwiązanie:** Użyj komponentu `SafeAreaView` z pakietu `react-native-safe-area-context`.
+
+- **Problem:** Błędy "Metro bundler" w Windows 11.
+  **Rozwiązanie:** Upewnij się, że ścieżki nie są zbyt długie (limit Windows to 260 znaków). Uruchom `metro` z flagami `--max-workers=2` dla stabilności. W przypadku problemów, użyj polecenia `node --trace-warnings node_modules/react-native/cli.js start` by zobaczyć pełne komunikaty o błędach.
+
+- **Problem:** Problemy z emulatorem BlueStack.
+  **Rozwiązanie:** Upewnij się, że wirtualizacja jest włączona w BIOS, a Hyper-V skonfigurowany poprawnie w Windows 11. Spróbuj użyć starszej wersji BlueStack (np. 5.x) jeśli nowsze wersje powodują problemy.
+
+- **Problem:** Problemy z dostępnością na różnych urządzeniach Android.
+  **Rozwiązanie:** Testuj na różnych wersjach systemu Android. Używaj narzędzia "Accessibility Scanner" Google do wykrywania problemów z dostępnością.
+
+## Format wyniku
+
+- Zmiany pogrupowane według plików, w kolejności ich tworzenia lub modyfikacji.
+- Dla każdego pliku: krótki opis zmian, cel i funkcjonalność, a następnie blok kodu.
+- Używaj komentarzy `// ...existing code...` do oznaczania niezmienionych fragmentów.
+- Podaj wszystkie komendy terminal/PowerShell jako osobne bloki kodu `powershell`.
+- Każdy plik kodu powinien zaczynać się od komentarza:
+  ```js
+  // Wygenerowano przez prompt: docs/prompts/architecture-execute/prompt.md
+  // Data: 2025-04-19
+  ```
+- Stosuj się do reguł cytowania i formatowania z `docs/templates/prompt-rules.md`.
+
+**Tagi:** #inicjalizacja #architektura #react-native #nawigacja #struktura-projektu #windows11 #emulacja #podgląd #dostępność #responsywność

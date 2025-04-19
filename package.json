@@ -10,16 +10,26 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-native-community/masked-view": "^0.1.11",
+    "@react-navigation/native": "^7.1.6",
+    "@react-navigation/stack": "^7.2.10",
     "react": "",
-    "react-native": ""
+    "react-native": "",
+    "react-native-gesture-handler": "^2.25.0",
+    "react-native-safe-area-context": "^5.4.0",
+    "react-native-screens": "^4.10.0"
   },
   "devDependencies": {
     "@babel/core": "",
     "@babel/runtime": "",
+    "@react-native-community/cli": "latest",
     "@react-native-community/eslint-config": "",
     "eslint": "",
     "jest": "",
     "metro-react-native-babel-preset": "",
+    "react-dom": "^19.1.0",
+    "react-native-web": "^0.20.0",
+    "react-scripts": "^5.0.1",
     "react-test-renderer": ""
   },
   "jest": {

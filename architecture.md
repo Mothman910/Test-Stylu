@@ -64,12 +64,12 @@ _Zawartość zostanie dodana w kolejnych krokach (patrz poniżej)._
 
 ## 6. Plan Kolejnych Kroków Rozwoju
 
-1.  **Inicjalizacja projektu React Native:** Użycie `npx react-native init TestStylu`.
+1.  **Inicjalizacja projektu React Native:** Użycie `npx react-native init .`.
 2.  **Utworzenie struktury folderów:** Stworzenie katalogów wewnątrz `src/` zgodnie z proponowaną strukturą.
 3.  **Implementacja Nawigacji:** Skonfigurowanie podstawowej nawigacji między ekranami przy użyciu React Navigation.
 4.  **Stworzenie Ekranów:** Zaimplementowanie szkieletów `QuizScreen` i `ResultScreen`.
-5.  **Implementacja Logiki Quizu:** Stworzenie `QuizEngine` i `DataService` do zarządzania przepływem quizu i ładowania danych.
-6.  **Dodanie Danych:** Przygotowanie i dodanie przykładowych pytań, odpowiedzi (obrazów) i referencji.
-7.  **Styling i Animacje:** Dopracowanie wyglądu aplikacji, dodanie stylów i animacji.
-8.  **Testowanie:** Przeprowadzenie testów funkcjonalnych.
-9.  **Podgląd:** Umożliwienie podglądu działania aplikacji w przeglądarce na komputerze.
+5.  **Podgląd:** Umożliwienie podglądu działania aplikacji w przeglądarce na komputerze za pomocą przeglądarki Opera lub emulatora BlueStack w Windows 11.
+6.  **Implementacja Logiki Quizu:** Stworzenie `QuizEngine` i `DataService` do zarządzania przepływem quizu i ładowania danych.
+7.  **Dodanie Danych:** Przygotowanie i dodanie przykładowych pytań, odpowiedzi (obrazów) i referencji.
+8.  **Styling i Animacje:** Dopracowanie wyglądu aplikacji, dodanie stylów i animacji.
+9.  **Testowanie:** Przeprowadzenie testów funkcjonalnych.

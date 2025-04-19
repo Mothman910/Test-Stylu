@@ -1,5 +1,9 @@
 # Prompt: [nazwa_promptu] - <!-- Wersja <X.Y> -->
 
+## ID prompta
+
+<!-- takie samo jak nazwa głównego folderu prompta np. project-init lub architecture-execute -->
+
 **Data:** <!-- YYYY-MM-DD -->
 
 **Wygenerowano przez ModelAI:** <!-- np. Claude 3.7 Sonnet Thinking -->
@@ -32,7 +36,8 @@
 
 ## Lista kontrolna
 
-- [ ] Prompt jest jednoznaczny
+- [ ] Prompt jest jednoznaczny i spójny
 - [ ] Instrukcje są precyzyjne
 - [ ] Format wyniku jest jasno określony
-- [ ] Przetestowano na co najmniej 2 modelach
+- [ ] Zgodność z prompt-rules.md
+- [ ] Zgodność z workflow.md
