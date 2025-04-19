@@ -26,4 +26,3 @@ Osoby dorosłe posiadające Smartfona.
 
 - React Native
 - Biblioteki .js do animacji
-- [Inne wymagania technologiczne?]

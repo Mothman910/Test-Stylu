@@ -1,0 +1,28 @@
+{
+  "name": "test-stylu",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "react": "",
+    "react-native": ""
+  },
+  "devDependencies": {
+    "@babel/core": "",
+    "@babel/runtime": "",
+    "@react-native-community/eslint-config": "",
+    "eslint": "",
+    "jest": "",
+    "metro-react-native-babel-preset": "",
+    "react-test-renderer": ""
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
